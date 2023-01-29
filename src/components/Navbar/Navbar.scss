@@ -1,0 +1,30 @@
+.header {
+  padding: 1rem;
+  background-color: rgb(79, 70, 229);
+  color: #fffeee;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3{
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    &__links{
+
+      a{
+        margin-left: 1rem;
+        color : #fffeee;
+        transition: all .4s ease-in-out;
+
+        &:hover{
+          transition: all .4s ease-in-out;
+          color: #eee;
+        }
+      }
+    }
+  }
+}

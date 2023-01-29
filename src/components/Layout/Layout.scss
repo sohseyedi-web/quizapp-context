@@ -1,0 +1,79 @@
+.layout{
+  padding-top: 1.5rem;
+  text-align: center;
+
+  h5{
+    color: #fffeee;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  p{
+    color: #fffeee;
+    font-weight: 500;
+    margin : 1rem 0;
+    opacity: .9;
+  }
+  &-container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__box{
+      width: 48%;
+      font-size: 1.5rem;
+      background-color: rgb(79, 70, 229);
+      margin: 1rem 0;
+      border-radius: .5rem;
+      color: #fffeee;
+      font-weight: 500;
+      padding: 1rem 1.2rem;
+      transition: all .4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+      &:hover{
+        transition: all .4s ease-in-out;
+        background-color: transparent;
+        color: #fffeee;
+
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 992px){
+    &-container{
+      width: 70%;
+    }
+  }
+  @media screen and (max-width:768px){
+    &-container{
+      width: 80%;
+
+      &__box{
+        width: 49%;
+        margin: .8rem 0;
+      }
+    }
+  }
+  @media screen and (max-width: 600px){
+    &-container{
+      width: 95%;
+
+      &__box{
+        flex-direction: column;
+        width: 85%;
+        margin: 1rem auto;
+      }
+    }
+    h5{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: .9rem;
+    }
+  }
+}
